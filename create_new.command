@@ -55,5 +55,11 @@ main() {
     sleep 4
 }
 
-# CALLING MAIN METHOD
+# ~~~ ALL CODE EXECUTION ~~~
+
+# get the directory of the script & cd to that directory
+script_dir=$(dirname "$0")
+cd "$script_dir"
+
+# call main method
 main
